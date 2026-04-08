@@ -1,0 +1,596 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+.home {
+   display: grid;
+   height: auto;
+   width: 100%;
+   font-family: 'Poppins', sans-serif;
+   font-size: 16px;
+   grid-template-columns: 100%;
+   grid-template-rows: auto auto 1fr auto auto;
+   grid-template-areas:
+      "nav"
+      "header"
+      "main"
+      "aside"
+      "footer"
+   ;
+
+   background-color: #121212;
+   color: white;
+
+}
+
+.sobre {
+   display: grid;
+   width: 100%;
+   font-family: 'Poppins', sans-serif;
+   font-size: 16px;
+   grid-template-columns: 100%;
+   grid-template-rows: auto  auto auto;
+   grid-template-areas:
+      "nav"
+      "main"
+      "footer"
+   ;
+
+   background-color: #121212;
+   color: white;
+   min-height: 100vh;
+
+}
+
+.contac {
+   display: grid;
+   width: 100%;
+   font-family: 'Poppins', sans-serif;
+   font-size: 16px;
+   grid-template-columns: 100%;
+   grid-template-rows: auto auto auto auto;
+   grid-template-areas:
+      "nav"
+      "header"
+      "main"
+      "footer"
+   ;
+
+   background-color: #121212;
+   color: white;
+   min-height: 100vh;
+
+}
+
+nav {
+   grid-area: nav;
+   height: 100%;
+   width: 100%;
+
+}
+
+/* //////////////////////////HEADER//////////////////////// */
+header {
+   text-align: center;
+   grid-area: header;
+   height: 100%;
+   width: 100%;
+   margin-bottom: 10px;
+
+}
+
+.carousel,
+.carousel-inner,
+.carousel-item {
+   height: 100%;
+}
+
+.carousel-item img {
+   width: 100%;
+   height: 100%;
+}
+
+/* ///////////////////////////////////// */
+main {
+   grid-area: main;
+   padding: 5px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   gap: 20px;
+   padding-bottom: 30px;
+}
+
+section {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-top: 4%;
+}
+
+
+
+/*////////////////// GALERIA///////////////////// */
+#galeria {
+   width: 100%;
+}
+
+.contenedor {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 10px;
+}
+
+.contenedor a {
+   width: 100%;
+   height: 200px;
+}
+
+.contenedor a img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   border-radius: 10px;
+}
+
+
+.goverlay {
+   background: rgba(0, 0, 0, 0.4) !important;
+   backdrop-filter: blur(5px);
+}
+
+.gslide-description {
+   display: none;
+}
+
+
+/* /////////////////////ASIDE/////////////////////// */
+
+aside {
+   margin-top: 5px;
+   margin-bottom: 5px;
+   grid-area: aside;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 10px;
+
+
+}
+
+.card {
+   text-align: center;
+   background-image: linear-gradient(145deg, #0e1118, #141a24);
+   border: 1px solid rgba(0, 255, 255, 0.2);
+   color: white;
+   border-radius: 15px;
+   box-shadow: 2px 4px 9px rgba(109, 108, 108, 0.5);
+}
+
+.card-header {
+   font-size: 18px;
+}
+
+.card-text {
+   text-align: center;
+}
+
+.cst {
+   top: 20px;
+   position: sticky;
+}
+
+ul {
+   text-align: start;
+}
+
+
+
+footer {
+   grid-area: footer;
+   width: 100%;
+   height: auto;
+   background-color: rgb(33, 37, 41);
+   color: white;
+   margin-top: 5px;
+   position: relative;
+
+}
+
+.pf {
+   margin-top: 10px;
+   display: flex;
+   text-align: justify;
+   line-height: 0;
+   font-size: 10px;
+
+}
+
+
+
+
+h2 {
+   font-size: 22px;
+   font-weight: bold;
+   text-align: center;
+}
+
+
+
+p {
+   text-align: center;
+   font-size: 14px;
+   line-height: 1.6;
+}
+
+#peventos {
+   text-align: start;
+   line-height: 1;
+}
+
+.pproductos {
+   text-align: start;
+}
+
+
+
+/* //////////////SOBRE EL SEMILLERO//////////// */
+#main2 {
+   padding: 10px;
+   gap: 15px;
+}
+
+/* ///////EVENTOS/////////////////// */
+#main3{
+   padding: 10px;
+   
+}
+/* ///////// */
+
+.sectionm2 {
+   margin: 0;
+}
+
+
+/* ///////////////////EQUIPOS////////////////////// */
+#main4 {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   padding: 10px;
+}
+
+.grupo {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   border-radius: 10px;
+   border: 1px solid rgba(0, 255, 255, 0.2);
+   gap: 10px;
+   padding: 10px;
+}
+
+
+#pgrupo {
+   text-align: start;
+}
+
+/* /////////PRODUCTOS///////////////// */
+#main5{
+   padding: 10px;
+}
+
+/* ////////////// CONTACTO///////////////*/
+#main6{
+   align-items: start;
+}
+
+#hcontact {
+   padding: 5px;
+   text-align: start;
+   font-size: 18px;
+}
+#secontac{
+   display: flex;
+   align-items: start;
+}
+form {
+   width: 100%;
+   background: rgba(255, 255, 255, 0.05);
+   padding: 20px;
+   border-radius: 10px;
+   border: 1px solid rgba(0, 255, 255, 0.2);
+}
+
+
+
+@media(min-width: 481px) and (max-width:900px) {
+   .home {
+      display: grid;
+      height: auto;
+      width: 100%;
+      font-family: 'Poppins', sans-serif;
+      font-size: 16px;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: auto auto 1fr auto auto;
+      grid-template-areas:
+         "nav nav"
+         "header header"
+         "main main"
+         "aside aside"
+         "footer footer "
+      ;
+
+   }
+
+   .contenedor {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+   }
+
+
+
+   aside {
+      margin-top: 5px;
+      margin-bottom: 5px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 5px;
+   }
+
+   /* //////////////////////////SOBRE EL SEMILLERO/////////////////////// */
+
+   #main2 {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: auto auto auto auto;
+      grid-template-areas:
+         "rese rese"
+         "mision vision"
+         "object object"
+         "lineas lineas"
+      ;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 20px;
+      padding-right: 20px;
+      gap: 15px;
+
+   }
+
+   #rese {
+      grid-area: rese;
+      display: flex;
+      justify-content: center;
+      grid-area: rese;
+   }
+
+
+
+   .mision {
+      justify-self: center;
+      grid-area: mision;
+
+   }
+
+   .vision {
+      justify-self: center;
+      grid-area: vision;
+   }
+
+   .object {
+      justify-self: center;
+      grid-area: object;
+   }
+
+   .lineas {
+      justify-self: center;
+      grid-area: lineas;
+   }
+
+   #main2 .card {
+      width: 100% !important;
+
+   }
+
+   /* ////////////////////////////////////EVENTOS/////////////// */
+   #main3 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+      width: 100%;
+   }
+
+   /* //////////////////////////RESUTADOS//////////////// */
+   #main5 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+      width: 100%;
+   }
+
+   /*  */
+
+
+}
+
+
+
+@media(min-width: 901px) {
+
+   .home {
+      display: grid;
+      grid-template-columns: 20% 60% 20%;
+      grid-template-rows: auto 30% 1fr auto;
+      grid-template-areas:
+         "nav nav nav"
+         "header header header"
+         "main main aside"
+         "footer footer footer";
+
+   }
+
+
+   main {
+      display: grid;
+      grid-template-columns: 30% 70%;
+      gap: 10px;
+      align-items: self-start;
+   }
+
+   /* ////////////////////////////////SOBRE EL SEMILLERO */
+   #main2 {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: auto auto 1fr auto;
+      grid-template-areas:
+         "rese rese"
+         "mision vision"
+         "object lineas"
+      ;
+
+      padding-bottom: 10px;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 10px;
+      gap: 10px;
+
+   }
+
+   #rese {
+      display: flex;
+      justify-content: center;
+      grid-area: rese;
+   }
+
+   .mision {
+      justify-self: center;
+      grid-area: mision;
+
+   }
+
+   .vision {
+      justify-self: center;
+      grid-area: vision;
+   }
+
+   .object {
+      justify-self: center;
+      grid-area: object;
+   }
+
+   .lineas {
+      justify-self: center;
+      grid-area: lineas;
+   }
+
+
+
+
+   #info {
+      padding-top: 100px;
+      padding-left: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      position: sticky;
+      top: 20px;
+   }
+
+
+
+   .contenedor {
+      grid-template-columns: repeat(2, 1fr);
+   }
+
+   aside {
+      padding-top: 5px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+      padding: 10px;
+      padding-top: 90px;
+   }
+
+
+   .card {
+      width: 100% !important;
+   }
+
+   footer {
+      margin-top: 0.1%;
+      display: flex;
+      justify-content: center;
+      gap: 1%;
+   }
+
+   #sect1 {
+      display: flex;
+      align-items: start;
+   }
+
+   #sec2 {
+      display: flex;
+      align-items: start;
+   }
+
+   p {
+      font-size: 18px;
+      line-height: 1.6;
+   }
+
+   #qs {
+      text-align: start;
+   }
+
+   #qh {
+      text-align: start;
+   }
+
+   /* ////////////////////////EVENTOS///////////////////////////////////////// */
+   #main3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+      width: 100%;
+   }
+
+   /* ///////////////EQUIPOS/////////////// */
+
+
+
+   /* ////////////RESULTADOS///////////////// */
+   #main5 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+      width: 100%;
+   }
+
+
+
+}
+
+#cu {
+   height: 100%;
+   padding: 10px;
+   color: white;
+   border: 1px solid rgba(0, 255, 255, 0.2);
+   background-image: linear-gradient(145deg, #0e1118, #141a24);
+   color: white;
+   border-radius: 15px;
+   box-shadow: 2px 4px 9px rgba(109, 108, 108, 0.5);
+}
+
+#p2 {
+   text-align: start;
+}
